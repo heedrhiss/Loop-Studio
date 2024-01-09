@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Loop Studio</title>
+</head>
+<body>
+<section id="one">
+<div class="w-full mx-auto px-5 py-12 md:px-32">
+    <div class="relative flex justify-between items-center">
+        <img src="./images/logo.svg" alt="">
+        <nav class="hidden h-10 space-x-8  text-sm font-bold font-alata text-white md:flex">
+        <div class="group">
+            <a href="#">About</a>
+            <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
+        </div>
+        <div class="group">
+            <a href="#">Careers</a>
+            <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
+        </div>
+        <div class="group">
+            <a href="#">Events</a>
+            <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
+        </div>
+        <div class="group">
+            <a href="#">Products</a>
+            <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
+        </div>
+        <div class="group">
+            <a href="#">Support</a>
+            <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
+        </div>
+        </nav>
+    <button class="hamburg md:hidden z-40" id="btn">
+        <span class="hamburg-top"></span>
+        <span class="hamburg-mid"></span>
+        <span class="hamburg-bot"></span>
+    </button>
+
+    </div>
+    <div class="hidden w-full min-h-screen p-10 bg-black text-white md:hidden" id="menu">
+        <nav class="space-y-4 flex flex-col text-md uppercase items-start font-bold font-alata text-white">
+                <a href="#" class="hover:text-red-400">About</a>
+                <a href="#" class="hover:text-red-400">Careers</a>
+                <a href="#" class="hover:text-red-400">Events</a>
+                <a href="#" class="hover:text-red-400">Products</a>
+                <a href="#" class="hover:text-red-400">Support</a>   
+            
+            </nav>
+    </div>
+    <div class="border-2 my-32 p-6 text-3xl text-white border-white md:text-6xl md:p-10 md:max-w-lg">
+        IMPRESSIVE EXPERIENCES THAT DELIVER
+    </div>
+</div>
+</section>
+<secion id="two">
+    <div class="max-w-6xl mx-auto my-20">
+        <div class="relative flex flex-col px-5 space-y-4 md:px-0 md:flex-row md:sp">
+            <img src="./images/desktop/image-interactive.jpg" alt="">
+            <div class="flex flex-col bg-white text-gray-900 text-center space-y-4 md:text-left md:py-16 md:absolute top-52 right-0 md:pl-16">
+                <h2 class="max-w-lg md:text-5xl">THE LEADER IN INTERACTIVE VR</h2>
+                <p class="max-w-md">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+            </div>
+        </div>
+    </div>
+</secion>
+
+<section id="three">
+    <div class="max-w-6xl mx-5 my-10 md:mx-auto">
+        <div class="flex justify-center my-10 items-center md:justify-between">
+            <h1 class="text-4xl text-center px-2">OUR CREATIONS</h1>
+            <Button class="hidden border-2 px-4 py-2 tracking-widest text-lg font-alata text-black md:block border-black  hover:bg-black hover:text-white hover:scale-90 duration-200">
+                See More
+            </Button>
+        </div>
+        <div class="grid space-y-4 py-5 md:grid-cols-4 md:mx-0 md:space-x-5">
+            <!-- //Item 1 -->
+            <div class="relative group overflow-hidden">
+                <img src="./images/desktop/image-night-arcade.jpg" class="hidden object-fill md:block group-hover:scale-110 duration-200" alt="">
+                <img src="./images/mobile/image-night-arcade.jpg" class="object-fill md:hidden" alt="">
+                <div class="title">
+                    Night arcade
+                </div>
+                <div class="grad"></div>
+            </div>
+            <!-- //Item 2 -->
+            <div class="relative group overflow-hidden">
+                <img src="./images/desktop/image-fisheye.jpg" class="hidden object-fill md:block group-hover:scale-110 duration-200" alt="">
+                <img src="./images/mobile/image-fisheye.jpg" class="object-fill md:hidden" alt="">
+                <div class="title">
+                   Make it fisheye
+                </div>
+                <div class="grad"></div>
+            </div>
+            <!-- //Item 3 -->
+            <div class="relative group overflow-hidden">
+                <img src="./images/desktop/image-curiosity.jpg" class="hidden object-fill md:block group-hover:scale-110 duration-200" alt="">
+                <img src="./images/mobile/image-curiosity.jpg" class="object-fill md:hidden" alt="">
+                <div class="title">
+                   the curiosity
+                </div>
+                <div class="grad"></div>
+            </div>
+            <!-- //Item 4 -->
+            <div class="relative group overflow-hidden">
+                <img src="./images/desktop/image-from-above.jpg" class="hidden object-fill md:block group-hover:scale-110 duration-200" alt="">
+                <img src="./images/mobile/image-from-above.jpg" class="object-fill md:hidden" alt="">
+                <div class="title">
+                   from up above vr
+                </div>
+                <div class="grad"></div>
+            </div>
+            <!-- //Item 5 -->
+            <div class="relative group overflow-hidden">
+                <img src="./images/desktop/image-pocket-borealis.jpg" class="hidden object-fill md:block group-hover:scale-110 duration-200" alt="">
+                <img src="./images/mobile/image-pocket-borealis.jpg" class="object-fill md:hidden" alt="">
+                <div class="title">
+                   pocket borealis
+                </div>
+                <div class="grad"></div>
+            </div>
+            <!-- //Item 6 -->
+            <div class="relative group overflow-hidden">
+                <img src="./images/desktop/image-grid.jpg" class="hidden object-fill md:block group-hover:scale-110 duration-200" alt="">
+                <img src="./images/mobile/image-grid.jpg" class="object-fill md:hidden" alt="">
+                <div class="title">
+                  the grid
+                </div>
+                <div class="grad"></div>
+            </div>
+             <!-- //Item 7 -->
+             <div class="relative group overflow-hidden">
+                <img src="./images/desktop/image-soccer-team.jpg" class="hidden object-fill md:block group-hover:scale-110 duration-200" alt="">
+                <img src="./images/mobile/image-soccer-team.jpg" class="object-fill md:hidden" alt="">
+                <div class="title">
+                   soccer team vr
+                </div>
+                <div class="grad"></div>
+            </div>
+             <!-- //Item 8 -->
+             <div class="relative group overflow-hidden">
+                <img src="./images/desktop/image-deep-earth.jpg" class="hidden object-fill md:block group-hover:scale-110 duration-200" alt="">
+                <img src="./images/mobile/image-deep-earth.jpg" class="object-fill md:hidden" alt="">
+                <div class="title">
+                   deep earth
+                </div>
+                <div class="grad"></div>
+            </div>
+        </div>
+        <Button class="block w-full border-2 px-4 py-2 tracking-widest text-lg font-alata text-black md:hidden border-black  hover:bg-black hover:text-white hover:scale-90 duration-200">
+            See More
+        </Button>
+    </div>
+</section>
+<footer class="mx-auto md:mx-0">
+    <div class="flex flex-col p-8 space-y-5 justify-between bg-black text-white md:flex-row md:space-y-0">
+        <div class="flex flex-col space-y-5 justify-center items-center mx-5">
+            <img src="./images/logo.svg" class="w-40" alt="">
+            <nav class="flex flex-col justify-center items-center space-y-4  text-sm  w-full font-alata text-white md:space-x-4 md:space-y-0 md:flex-row">
+                <div class="group">
+                    <a href="#">About</a>
+                    <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
+                </div>
+                <div class="group">
+                    <a href="#">Careers</a>
+                    <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
+                </div>
+                <div class="group">
+                    <a href="#">Events</a>
+                    <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
+                </div>
+                <div class="group">
+                    <a href="#">Products</a>
+                    <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
+                </div>
+                <div class="group">
+                    <a href="#">Support</a>
+                    <div class="mx-2 group-hover:border-b group-hover:border-white"></div>
+                </div>
+                </nav>
+        </div>
+
+        <div class="flex flex-col space-y-5 jutify-center items-center md:justify-end">
+            <div class="flex justify-center space-x-5 items-center">
+               <a href="https://twitter.com/Heedrhiss"><img src="./images/icon-twitter.svg" alt=""></a>
+               <a href="https://www.instagram.com/heedrhiss/"><img src="./images/icon-instagram.svg" alt=""></a>
+               <a href="https://www.facebook.com/Olowofenira"><img src="./images/icon-facebook.svg" alt=""></a>
+               <a href=""><img src="./images/icon-pinterest.svg" alt=""></a>
+            </div>
+            <h5 class="text-sm text-slate-300">
+                &copy; Heedrhiss 2023. All Rights Reserved.
+            </h5>
+        </div>
+    </div>
+
+</footer>
+</body>
+<script>
+    const btn=  document.getElementById('btn');
+    const menu= document.getElementById('menu');
+    btn.addEventListener('click',()=>{
+        btn.classList.toggle('active');
+        menu.classList.toggle('flex');
+        menu.classList.toggle('hidden');
+
+    })
+</script>
+</html>

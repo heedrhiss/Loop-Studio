@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn{
+        @apply border border-black rounded-lg px-3 py-2 font-semibold hover:opacity-40;
+    }
+    .title{
+        @apply absolute bottom-6 w-48 right-0 left-0 text-white text-2xl pl-8 uppercase group-hover:text-black group-hover:scale-110 duration-200 z-20
+        }
+        .grad{
+        @apply absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70 group-hover:scale-110 duration-200 md:right-3
+        }
+        .hamburg{
+            position: absolute;
+            right: 0;
+            top: 0;
+            cursor: pointer;
+            height: 25px;
+            width: 25px;
+            transition: all 0.3s
+        }
+        .hamburg-top,
+        .hamburg-mid,
+        .hamburg-bot {
+            position: absolute;
+            top: 0;
+            left: 0;
+        width: 24px;
+        height: 2px;
+        background: #fff;
+        transform: rotate(0);
+        transition: all 0.5s;
+        }
+        .hamburg-top{
+            transform:  translateY(5px);
+           }
+        .hamburg-mid{
+         transform:  translateY(13px);
+        }
+        .hamburg-bot {
+         transform:  translateY(21px);
+        }
+
+        .active{
+            transform: rotate(90deg);
+        }
+        .active .hamburg-top {
+            transform: rotate(45deg) translateY(6px) translateX(6px);
+          }
+          
+          .active .hamburg-mid {
+            display: none;
+          }
+          
+          .active .hamburg-bot {
+            transform: rotate(-45deg) translateY(6px) translateX(-6px);
+          }
+          
+}
+@layer base{
+    h1{ 
+        font-size: 2.5em;
+        font-weight: 500
+    }
+    h2{
+        font-size: 2.1em;
+        font-weight: 500
+    }
+    h3{
+        font-size: 1.8em;
+        font-weight: 500
+    }
+    h4{
+        font-size: 1.5em;
+        font-weight: 500
+    }
+    h5{
+        font-size: 1.2em;
+        font-weight: 500
+    }
+    h6{
+        font-size: 1em;
+        font-weight: 500
+    }
+    
+}
+
+#one{
+background-image: url('./images/desktop/image-hero.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+@media (max-width:576px){
+#one{
+background-image: url('./images/mobile/image-hero.jpg');
+background-size: center;
+}
+}
